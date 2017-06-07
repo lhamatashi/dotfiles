@@ -95,6 +95,10 @@ alias cls="clear"
 alias rmf="rm -r $1"
 alias v="vim $1"
 alias wall="python3 ~/scripts/pybingwallpaper/src/main.py -b &"
+alias gs="git status"
+alias ga="git add -A"
+alias gp="git push"
+
 
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=/home/lhama/.virtualenvs
