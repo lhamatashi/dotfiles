@@ -1,3 +1,4 @@
+![](dots.jpg)
 # dotfiles
 my dotfiles for linux
 
