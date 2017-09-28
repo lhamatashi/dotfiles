@@ -1,0 +1,12 @@
+alias ll="ls -la"
+alias dot="cd ~/code/dotfiles"
+alias desk="cd ~/Desktop"
+alias home="cd ~/"
+alias cls="clear"
+alias rmf="rm -r $1"
+alias v="vim $1"
+alias gs="git status"
+alias ga="git add -A"
+alias gp="git push"
+
+
