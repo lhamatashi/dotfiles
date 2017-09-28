@@ -9,13 +9,17 @@ sudo apt-get install -y wget \
 						python3-pip \
 						virtualenv
 
+# HOSTS
+#######################################################
+wget https://raw.githubusercontent.com/racaljk/hosts/master/tools/lhosts
+sudo mv lhosts /usr/local/bin/lhosts
+sudo chmod +x /usr/local/bin/lhosts
+
 # LINKING DOTFILES
 #######################################################
-echo "linking dotfiles..."
 ln -s -f ~/code/dotfiles/.gitconfig ~/
 ln -s -f ~/code/dotfiles/.zshrc ~/
 ln -s -f ~/code/dotfiles/.vimrc ~/
 ln -s -f ~/code/dotfiles/.tmux.conf ~/
-
-
+ln -s -f ~/code/dotfiles/sublime ~/.config/sublime-text-3/Packages/User
 

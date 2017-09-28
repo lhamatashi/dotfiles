@@ -8,5 +8,8 @@ alias v="vim $1"
 alias gs="git status"
 alias ga="git add -A"
 alias gp="git push"
-
+alias sz="source ~/.zshrc"
+alias ez="subl ~/.zshrc"
+# updating hosts from github
+alias lh="lhosts -mr \"1,17\""
 
