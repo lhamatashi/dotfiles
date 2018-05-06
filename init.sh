@@ -30,15 +30,16 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 # Init vim
 #######################################################
-#curl http://j.mp/spf13-vim3 -L -o - | sh
-wget https://raw.githubusercontent.com/spf13/spf13-vim/3.0/bootstrap.sh -O /tmp/install-vim.sh
-sudo chmod +x /tmp/install-vim.sh
-/tmp/install-vim.sh
+mkdir -p ~/.vim/bundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+ln -s -f ~/code/dotfiles/.vimrc ~/.vimrc
+vim +PluginInstall +qall
+
+
 
 # LINKING DOTFILES
 #######################################################
 ln -s -f ~/code/dotfiles/.gitconfig ~/
 ln -s -f ~/code/dotfiles/.zshrc ~/
-ln -s -f ~/code/dotfiles/.vimrc ~/
 ln -s -f ~/code/dotfiles/.tmux.conf ~/
 ln -s -f ~/code/dotfiles/sublime ~/.config/sublime-text-3/Packages/User
