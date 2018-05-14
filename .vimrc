@@ -27,6 +27,7 @@ call vundle#end()
 
 " 常用
 " ----------------------------------
+set nu
 set nocompatible
 filetype off
 filetype plugin indent on
@@ -34,7 +35,6 @@ syntax enable
 set tabstop=4
 set shiftwidth=4
 set softtabstop=2
-set nu
 set noswapfile
 set autoindent
 set expandtab
@@ -110,6 +110,9 @@ nnoremap <leader><right> :tabnext<CR>
 nnoremap <C-w> :FZF<CR>
 nnoremap <C-f> :Ag<CR>
 nnoremap <C-b> :Buffers<CR>
+
+nmap <F8> :w<CR>:!python %<CR>
+
 let g:fzf_action = {
       \ 'ctrl-o': 'open' }
 let g:fzf_layout = { 'down': '~25%' }

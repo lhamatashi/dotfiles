@@ -13,3 +13,6 @@ alias ez="subl ~/.zshrc"
 # updating hosts from github
 alias lh="lhosts -mr \"1,17\""
 
+# pacman
+alias ss="pacman -Ss"
+alias ii="sudo pacman -S"
