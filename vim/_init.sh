@@ -1,0 +1,1 @@
+ln -sf ~/code/dotfiles/vim/.vimrc ~/.vimrc
