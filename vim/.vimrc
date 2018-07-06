@@ -20,15 +20,15 @@ Plugin 'yggdroot/indentline'
 Plugin 'pseewald/anyfold'
 Plugin 'tpope/vim-surround'
 Plugin 'townk/vim-autoclose'													                            	" 自动插入括号类符号
-Plugin 'python-mode/python-mode'										                          			" python mode
-Plugin 'blindFS/vim-taskwarrior'											                          		" A interface for warriortask
-Plugin 'mattn/emmet-vim'
+"Plugin 'python-mode/python-mode'										                          			" python mode
+"Plugin 'blindFS/vim-taskwarrior'											                          		" A interface for warriortask
+"Plugin 'mattn/emmet-vim'
 Plugin 'morhetz/gruvbox'
-Plugin 'jceb/vim-orgmode'                                                           " orgmode vim 实现
-Plugin 'lervag/vimtex'                                                              " LaTeX
-Plugin 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }                            " LaTeX preview
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+"Plugin 'jceb/vim-orgmode'                                                           " orgmode vim 实现
+"Plugin 'lervag/vimtex'                                                              " LaTeX
+"Plugin 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }                            " LaTeX preview
+"Plugin 'SirVer/ultisnips'
+"Plugin 'honza/vim-snippets'
 "Plugin 'Valloric/YouCompleteMe'                                                    " YCM - autocomplete
 call vundle#end()
 " Vundle 结束

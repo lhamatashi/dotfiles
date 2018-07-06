@@ -1,5 +1,6 @@
 alias ll="ls -la"
 alias dot="cd ~/code/dotfiles"
+alias co="cd ~/code"
 alias desk="cd ~/Desktop"
 alias home="cd ~/"
 alias cls="clear"
