@@ -11,7 +11,7 @@ Plugin 'vim-airline/vim-airline-themes'                                         
 Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'                                           " 主题 F5 切换风格
 Plugin 'osyo-manga/vim-brightest'                                                   " 高亮关键词
-Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }                 " fuzy file finder 模糊文件搜索
+Plugin 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}                 " fuzy file finder 模糊文件搜索
 Plugin 'junegunn/fzf.vim'
 Plugin 'godlygeek/tabular'                                                          " tab
 Plugin 'plasticboy/vim-markdown'                                                    " markdown
@@ -32,12 +32,12 @@ set nocompatible
 filetype off
 filetype plugin indent on
 syntax enable
-set tabstop=4
-set shiftwidth=4
-set softtabstop=2
+set tabstop=8
+set shiftwidth=8
+set softtabstop=4
 set noswapfile
 set autoindent
-set expandtab
+set noexpandtab
 set backspace=indent,eol,start
 set wrap                                                                            " 不自动换行
 set ruler
@@ -121,19 +121,19 @@ let g:ctrlp_custom_ignore = "node_modules\DS_Store\|git"                        
 
 call togglebg#map("<F5>")                                                           " 主题背景切换 
 
-let g:indentLine_char = '▶'                                                         " 将tab显示为三角符号
-set listchars=eol:⬎                                                                 " 换行符的显示
+"let g:indentLine_char = '▶'                                                         " 将tab显示为三角符号
+"set listchars=eol:⬎                                                                 " 换行符的显示
 
 if !exists('g:airline_symbols')
-let g:airline_symbols = {}
+    let g:airline_symbols = {}
 endif
 let g:airline_left_sep = '▶'
 let g:airline_left_alt_sep = '❯'
 let g:airline_right_sep = '◀'
 let g:airline_right_alt_sep = '❮'
 let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline#extensions#tabline#enabled = 1										" 打开tabline
+"let g:airline_symbols.branch = '⎇'
+let g:airline#extensions#tabline#enabled = 1
 
 " Markdown
 let g:vim_markdown_folding_disabled = 1                                             " 取消markdown默认折叠内容
